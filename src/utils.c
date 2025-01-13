@@ -25,7 +25,7 @@ char	**get_env_paths(char **env)
 	i = 0;
 	while (env[i])
 	{
-		if (ft_strncmp(env[i], "PATH=", 5) == 0)
+		if (ft_strncmp(env[i], "PATH", 4) == 0)
 			return (ft_split(env[i] + 5, ':'));
 		i++;
 	}
