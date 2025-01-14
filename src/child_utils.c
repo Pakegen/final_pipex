@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   child_utils.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: qacjl <qacjl@student.42.fr>                +#+  +:+       +#+        */
+/*   By: quenalla <quenalla@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/28 14:08:21 by qacjl             #+#    #+#             */
-/*   Updated: 2025/01/05 18:02:49 by qacjl            ###   ########.fr       */
+/*   Updated: 2025/01/14 15:01:41 by quenalla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ void	redirect(int input_fd, int output_fd)
 	close(output_fd);
 }
 
-void	wait_for_all_children()
+void	wait_for_all_children(void)
 {
 	int		status;
 	pid_t	pid;

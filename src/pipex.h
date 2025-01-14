@@ -3,22 +3,22 @@
 /*                                                        :::      ::::::::   */
 /*   pipex.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: qacjl <qacjl@student.42.fr>                +#+  +:+       +#+        */
+/*   By: quenalla <quenalla@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/28 14:08:03 by qacjl             #+#    #+#             */
-/*   Updated: 2025/01/05 18:03:42 by qacjl            ###   ########.fr       */
+/*   Updated: 2025/01/14 15:04:24 by quenalla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-# ifndef PIPEX_H
+#ifndef PIPEX_H
 # define PIPEX_H
 
-#include "../utils/libft/libft.h"
-#include <stdlib.h>
-#include <unistd.h>
-#include <sys/types.h>
-#include <sys/wait.h>
-#include <fcntl.h>
+# include "../utils/libft/libft.h"
+# include <stdlib.h>
+# include <unistd.h>
+# include <sys/types.h>
+# include <sys/wait.h>
+# include <fcntl.h>
 
 void	pipex(char *infile, char *cmd1, char *cmd2, char *outfile, char **env);
 void	execute_pipeline(char *cmd1, char *cmd2, int in_fd, int out_fd, int *pipefd, char **env);
@@ -33,4 +33,4 @@ char	*join_path(char *path, char *cmd);
 void	free_split(char **split);
 void	error_exit(const char *msg);
 
-# endif
+#endif

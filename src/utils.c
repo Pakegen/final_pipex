@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   utils.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: qacjl <qacjl@student.42.fr>                +#+  +:+       +#+        */
+/*   By: quenalla <quenalla@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/28 14:08:10 by qacjl             #+#    #+#             */
-/*   Updated: 2025/01/05 18:33:04 by qacjl            ###   ########.fr       */
+/*   Updated: 2025/01/14 15:03:55 by quenalla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,10 +31,11 @@ char	**get_env_paths(char **env)
 	}
 	return (NULL);
 }
+
 char	*join_path(char *path, char *cmd)
 {
-	char *joined;
-	char *result;
+	char	*joined;
+	char	*result;
 
 	joined = ft_strjoin(path, "/");
 	result = ft_strjoin(joined, cmd);
@@ -48,7 +49,7 @@ void	free_split(char **split)
 
 	i = 0;
 	if (!split)
-		return;
+		return ;
 	while (split[i])
 	{
 		free(split[i]);
