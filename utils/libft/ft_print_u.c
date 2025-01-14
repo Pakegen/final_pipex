@@ -6,12 +6,11 @@
 /*   By: quenalla <quenalla@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/13 15:10:03 by quenalla          #+#    #+#             */
-/*   Updated: 2024/09/23 09:49:40 by quenalla         ###   ########.fr       */
+/*   Updated: 2025/01/14 15:06:25 by quenalla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include"libft.h"
-
 
 int	ft_print_u(unsigned int n)
 {
